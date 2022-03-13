@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+   
+}
+body{
+    background-color: #1f2732;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    background-color: #313a49;
+    height: 300px;
+    border-radius: 20px;
+}
+
+h2{
+ display: inline-block;
+    margin-left: 40%;
+    color: #55ffa9;
+margin-top: 80px;
+font-family: 'Manrope', sans-serif;
+font-size: 15px;
+font-weight: 800;
+}
+span{
+    color: #55ffa9;
+font-size: 15px;
+font-weight: 800;
+font-family: 'Manrope', sans-serif;
+
+}
+h1{
+font-weight: 800;
+    color: white;
+    font-size: 25PX;
+    font-family: 'Manrope', sans-serif;
+text-align: center;
+}
+.container-traco{
+    margin-left: 13%;
+}
+.container-traco img{
+    margin-top: 0px;
+
+}
+.dado{ 
+position: absolute;
+margin-left: 0px;
+margin-top:310px;
+}
+.img-svg{
+ fill:#55ffa9;  
+ background-color: #55ffa9;
+}
+button{
+    background-color: #55ffa9;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+}
+.dado button:hover{
+ background-color: aqua;
+}
+
+@keyframes spin { 
+    100%{ 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+@media screen and (max-width:600px) {
+    .container-traco{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 0;
+    }
+    .container{
+margin-left: 0%;
+max-width: 500px;
+width: auto;
+    }
+    .advice{
+        font-size: 25px;
+    }
+    .container-traco img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 300px;
+        height: 350px;
+       font-size: 25px;
+    }
+ 
+    .container-ad h2{
+       margin-left: 35%;
+    }
+    .dado{
+        margin-top: 370px;
+    }
+}
